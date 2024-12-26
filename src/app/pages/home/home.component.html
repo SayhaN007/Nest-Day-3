@@ -1,1 +1,47 @@
-<p>home works!</p>
+<div class="background">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center italiana-regular">Welcome to Indian Tourism</h1>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-12">
+            <p class="text-center roboto-regular">This is a simple website to showcase the beauty of India. We have a collection of beautiful places in India. You can explore the places and know more about them.</p>
+        </div>
+        </div>
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://cdn.pixabay.com/photo/2022/09/02/06/40/celebration-7426790_1280.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://cdn.pixabay.com/photo/2019/04/07/07/52/taj-mahal-4109110_960_720.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.pixabay.com/photo/2016/03/27/17/26/water-1283199_640.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container text-center mt-5"> 
+            <h2 class="roboto-bold">About</h2>
+            <p class="roboto-regular">India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by area, the most populous democracy in the world, and the most populous democracy in Asia. Located in the Indian Ocean, it shares land borders with Pakistan to the west, China to the northeast, Nepal to the southeast, and Bangladesh to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; its Andaman and Nicobar Islands share a maritime border with Thailand and Indonesia.</p>
+      </div>
+      <div class="row">
+     @for (item of homeCards; track item.id) {
+      <div class="col" style="margin-top: 20px; display: flex;justify-content: space-evenly;">
+        <app-cards [data]="item"></app-cards>
+      </div>
+     }
+    </div>
+      
+</div>

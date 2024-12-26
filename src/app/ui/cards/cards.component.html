@@ -1,1 +1,12 @@
-<p>cards works!</p>
+
+<div class="card" style="width: 18rem;  margin-top: 20px; display: flex;justify-content: space-evenly;">
+    <img src={{data.img}} class="card-img-top" alt="...">
+    <div class="card-body" >
+      <h5 class="card-title roboto-bold">{{data.state}}</h5>
+      <p class="card-text">{{data.description.slice(0,100)}}</p>
+      <a routerLink="{{data.path}}" class="btn btn-primary">
+        More info
+      </a>
+      
+    </div>
+  </div>
